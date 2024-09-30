@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+/* Header style*/
+
+header {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+/* .logo {
+    background-color: peru;
+} */
+
+.navigation img {
+    width: 100px;
+    margin-left: 20px;
+
+}
+/* .main-links {
+    background-color: beige;
+    
+} */
+.main-links ul {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    list-style: none;
+    gap:20px;
+}
+
+.main-links li {
+    padding: 10px;
+}
+.main-links li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.main-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.side-links {
+    /* background-color: rgb(20, 179, 60); */
+    text-align: end;
+    width: 20%;
+    
+}
+
+
+.side-links ul {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    list-style: none;
+    /* gap: 10px; */
+}
+
+.side-links li {
+    padding: 10px 0;
+}
+.side-links li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* padding: 10px; */
+    border-radius: 3px;
+}
+.side-links a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.side-links img {
+    width: 20px;
+}
+
+.text {
+    margin-bottom: -5px;
+}
+
+.side-links img.search {
+    background-color: rgb(255, 255, 255);
+    margin: 5px, 10px;
+  
+}
+.side-links img.search:hover {
+    background-color: rgb(189, 33, 33);
+    border-radius: 50%;
+}
+
+/* Main style*/
+main {
+    background-color: pink;
+    min-height: 100vh;
+}
+ 
+main .hero-image {
+    position: relative;
+    /* border: 3px solid black; */
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/Volvo\ bild.webp") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+div.hero-text{
+    position: absolute;
+    /* border: 3px solid black; */
+    right: 0;
+    top:600px;
+    width: 400px;
+    height: 100vh;
+    color: #f9f9f9;
+    text-align: end;
+    padding-right: 30px;
+    line-height: 1.8;
+}
+
+h2.title {
+    font-size: 14px;
+}
+
+p.text {
+    font-size: 40px;
+}
+
+p.price {
+    font-size: 20px;
+}
+
+button.explore {
+    background-color: #fafafa;
+    padding: 10px 15px;
+    border:none;
+    border-radius: 3px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Container */
+
+.container {
+    flex-grow: 1; /* Allow main content to grow and push the footer down */
+    background-color: pink;
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+/* Main Selling text*/
+
+.selling-text {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    border: 3px solid rgb(200, 5, 5);
+    text-align:center;
+    padding: 15px;
+    height: 15%;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-around; /* Space between the cards */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px; /* Fixed width for each card */
+    display: flex;
+    flex-direction: column; /* Stack image, text, and link vertically */
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%; /* Image takes full width of the card */
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    text-align: center;
+    flex-grow: 1; /* Ensure paragraph grows to fill available space */
+}
+
+.img-button {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.img-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+/* Footer container*/
+
+footer.footer-page {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+.help-sida {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.arrow-icon {
+    height: 10px;
+    width: 10px;
+}
+
+.help, .contact-links, .app, .socials, .copyrights {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media img {
+    height: 30px;
+    width: 30px;
+    
+    
+}
+
+.copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.copyrights p {
+    margin-top: 15px;
+}
+
+ul.regulations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
